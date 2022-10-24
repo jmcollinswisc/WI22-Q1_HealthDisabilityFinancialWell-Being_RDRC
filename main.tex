@@ -157,10 +157,10 @@ We use two datasets to explore the differences in financial security for those w
 
 First, we use the National Financial Capability Study (NFCS) data, a nationally-representative survey conducted every three years by the FINRA Investor Education Foundation. We use data from the 2018 and 2021 waves, as they include information on disability status, as well as financial wellbeing. The 2021 survey was conducted in the late summer to early fall. We consider a respondent to have a disability if they answered ``Permanently sick, disabled, or unable to work" to the question ``Which of the following best describes your current employment or work status?" We recognize that this is a relatively broad definition of disability. In order to examine a sample that is working-age, we limit our respondents to those between 18 and 64 years of age. 
 
-We define XX variables of interest in this sample. 
+We define five main variables of interest in this sample that all reflect the financial security of the household: presence of emergency savings, financial anxiety, whether they made a late credit card payment, whether they used alternative financial services, and the U.S. Consumer Financial Protection Bureau's financial wellbeing scale (FWB). The first four are dummy variables. FWB is measured from 0 to 100, based on the answers to five questions related to one's ability to keep up with day-to-day or month-to-month finances, as well as individual expectations of their ability to meet future financial goals.\footnote{For more on the FWB measure, see \url{https://www.consumerfinance.gov/consumer-tools/financial-well-being/about/}.}  
 
 
-Second, we use the Survey of Household Economic Decisionmaking (SHED) provided by the Federal Reserve Board. MORE HERE. 
+Second, we use data from the Survey of Household Economic Decisionmaking (SHED) provided by the Federal Reserve Board. MORE HERE. 
 
 
 
@@ -172,6 +172,12 @@ Next, we turn to data from the Census Pulse....import all of Viv's stuff.
 
 \section{Findings}
 \subsection{Before and After Pandemic Changes}
+Beginning with the NFCS, Figure \ref{NFCS_Y} shows the difference in financial outcomes across 2018 and 2021 for respondents with and without disabilities. The changes are measured in percentage point differences, since each outcome is a dummy variable. While both groups were more likely to have emergency savings in 2021 than 2018, those without disabilities experienced a greater increase.\footnote{The full question is: Have you set aside emergency or rainy day funds that would cover your expenses for 3 months, in case of sickness, job loss, economic downturn, or other emergencies?} At the same time, financial anxiety increased by more for people without disabilities than people with disabilities. A similar story exists for AFS use, which includes payday loans, pawn shops, tax return advances, and rent-to-own services. However, the AFS measure asks about the last five years, making it potentially less of a pandemic story and a more overall trend. Both groups saw an equal increase in the likelihood of having a credit card with a late payment, conditional on having a credit card. Taken together, these findings suggest that though households are more likely to have three months of savings in case of emergencies, they are more  anxious about the future of their financial situation than they were three years prior. While households with disabilities were more likely to be financially anxious than before the pandemic started, the change in their experiences are less severe than people without disabilities. This could be because SSA's programs provide a guarantee of future income for households with disabilities. 
+
+We next look at more subjective measures in Figure \ref{NFCS_FWB} in the CFPB's FWB score. Overall, people with disabilities saw an improvement in FWB, while people without disabilities saw a small decrease in FWB. The only measure within the scale that respondents with disabilities did worse on in 2021 than 2018 was thinking the money they had or will save won't last. This matches the financial anxiety increase, suggesting that there is concern for the future. However, people with disabilities were less likely to say they were just getting by financially, they will never have the things they want in life because of money, and their finances controlled their lives. They were more likely to say they had money left over at the end of the month, consistent with the finding from Figure \ref{NFCS_Y} that respondents with disabilities had more emergency savings in 2021 than 2018. 
+
+Overall, these findings suggest that while the ability to keep up with month-to-month and day-to-day finances improved for respondents with disabilities from 2018 to 2021---particularly when compared to those without disabilities---they remain more anxious about their financial future than in the past. The 2021 survey took place over a year into the pandemic, but worldwide changes due to the pandemic could have made people more uncertain about the future. On every marker except for emergency savings, respondents with disabilities had less determintal changes from 2018 to 2021. 
+
 
 \subsection{Within Pandemic Changes}
 
@@ -189,13 +195,23 @@ Increased eligibility for SSI and Medicaid, as well as SNAP and LIHEAP
  
  
 
-\begin{figure}[!ht]\label{ChangeY_18_21_nodisability.png}
-\caption{ }
+\begin{figure}[h!]\label{NFCS_Y}
+\caption{Changes in Financial Outcomes from 2018-2021 across People with and without Disabilities (NFCS)}
 \centering
-\includegraphics[scale=0.65]{ChangeY_18_21_nodisability.png}
+\includegraphics[scale=0.4]{Exhibits/ChangeY_18_21_NFCSdisabilitynodis.png}
 \medskip 
 \begin{minipage}{0.65\textwidth} 
-{\footnotesize Here are some notes that go with the graph.  \par}
+{\footnotesize Notes: Data come from the 2018 and 2021 NFCS. Each bar represents the difference in the average measure for people with and without disabilities from 2018 to 2021 in percentage point terms. Emergency is whether someone has emergency savings. Financial anxiety is whether the individual agreed with the following statement: ``discussing my finances can make my heart race or make me feel stressed." Late CC Payment is whether someone was charged a late fee on their credit card. AFS use is whether the individual used a payday lender, pawn shop, tax return advance, or rent-to-own service in the past five years.   \par}
+\end{minipage}
+\end{figure}
+  
+\begin{figure}[h!]\label{NFCS_FWB}
+\caption{Changes in Financial Wellbeing from 2018-2021 across People with and without Disabilities (NFCS) }
+\centering
+\includegraphics[scale=0.4]{Exhibits/ChangeFWB_18_21_NFCSdisabilitynodis.png}
+\medskip 
+\begin{minipage}{0.65\textwidth} 
+{\footnotesize Notes: Data come from the 2018 and 2021 NFCS. Each bar represents the difference in the average measure for people with and without disabilities from 2018 to 2021. FWB measured from 0 to 100. Each component of FWB are the following five questions. These are scaled from 0 to 4, where higher scores are recoded to always be better. Q1: I am just getting by financially; Q2: I am concerned the money I have or will save won't last; Q3: Because of my money situation, I feel like I will never have the things I want in life; Q4: My finances control my life; Q5: I have money left over at the end of the month. \par}
 \end{minipage}
 \end{figure}
   
@@ -206,7 +222,7 @@ Increased eligibility for SSI and Medicaid, as well as SNAP and LIHEAP
 
 
  
- 
+ \clearpage
 \section{Tables}
  
 
